@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- margin: 30px auto;padding: 20px 30px;height: 90vh; -->
+    <div class="container d-flex justify-content-center align-items-center" style="width:100%; height: 100vh;">
+        <div class="detailsBanner" style="padding: 10px 20px;">
+            <div style="text-align:center" class="">
+                <h2 id="characterName">Avenger</h2>
+                <span class="badge bg-info text-dark" id="comicCount" data-toggle="tooltip"
+                    title="Comic Count">20</span>
+                <span class="badge bg-dark" id="seriesCount" data-toggle="tooltip" title="Series Count">30</span>
+                <span class="badge bg-warning text-dark" id="storyCount" data-toggle="tooltip"
+                    title="Story Count">40</span>
+            </div>
+            <p style="text-align:center">Avengers & the Infinity Gauntlet (2010)</p>
+            <hr />
+            <img style="display:block;width:250px;height:250px; margin:auto;border-radius: 20px;" id="characterImg" src="" />
+            <h3>Description</h3>
+            <p id="characterDesc"></p>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

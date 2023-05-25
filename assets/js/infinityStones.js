@@ -1,4 +1,4 @@
-var infinityJSONData=
+let infinityJSONData=
 {
     "stones": [
       {
@@ -8,7 +8,8 @@ var infinityJSONData=
         "imageWithNoBg": "assets/images/spaceStone-nobg.gif",
         "status": "captured",
         "latitude": 61.5240,
-        "longitude": 105.3188
+        "longitude": 105.3188,
+        "keyword":"spaceStone"
       },
       {
         "name": "Mind Stone",
@@ -17,7 +18,8 @@ var infinityJSONData=
         "imageWithNoBg": "assets/images/mindStone-nobg.gif",
         "status": "safe",
         "latitude": -8.7832,
-        "longitude": 34.5085
+        "longitude": 34.5085,
+        "keyword":"mindStone"
       },
       {
         "name": "Time Stone",
@@ -26,7 +28,8 @@ var infinityJSONData=
         "imageWithNoBg": "assets/images/timeStone-nobg.gif",
         "status": "captured",
         "latitude": 20.5937,
-        "longitude": 78.9629
+        "longitude": 78.9629,
+        "keyword": "timeStone"
       },
       {
         "name": "Power Stone",
@@ -35,7 +38,8 @@ var infinityJSONData=
         "imageWithNoBg": "assets/images/powerStone-nobg.gif",
         "status": "safe",
         "latitude": 37.0902,
-        "longitude": -95.7129
+        "longitude": -95.7129,
+        "keyword":"powerStone"
       },
       {
         "name": "Soul Stone",
@@ -44,7 +48,8 @@ var infinityJSONData=
         "imageWithNoBg": "assets/images/soulStone-nobg.gif",
         "status": "safe",
         "latitude": -25.2744,
-        "longitude": 133.7751
+        "longitude": 133.7751,
+        "keyword":"soulStone"
       },
       {
         "name": "Reality Stone",
@@ -53,9 +58,9 @@ var infinityJSONData=
         "imageWithNoBg": "assets/images/realityStone-nobg.gif",
         "status": "captured",
         "latitude": 72.0000,
-        "longitude": -40.0000
+        "longitude": -40.0000,
+        "keyword":"realityStone"
       }
 
     ]
-  }
-  
+  };

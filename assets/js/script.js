@@ -82,8 +82,6 @@ function getAvengerDetails(characterId, event) {
     console.log("entered ");
     console.log("characterId" + characterId);
     window.location.href = "avengerDetails.html";
-
-
 }
 
 function generateHash(publicKey, privateKey) {
@@ -92,4 +90,27 @@ function generateHash(publicKey, privateKey) {
     const hash = CryptoJS.MD5(input).toString();
     return hash;
 }
-
+//display infinity stone data
+// console.log(infinityJSONData.stones[0].name); 
+function displayStoneData(){
+    infinityJSONData.stones.forEach(element => {
+        document.getElementById("carousel-inner").innerHTML+=
+    `<div class="carousel-item">
+          <div class="container">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-5 d-flex justify-content-center align-content-center flex-wrap">
+                  <img src="${element.image}" class="card-img-top" alt="Image 1" style="margin: 30px;">
+                </div>
+                <div class="col-md-7 ">
+                  <div class="card-body">
+                    <h4 class="card-title" style="margin:20px 0px">${element.name}</h4>
+                    <p class="card-text">${element.description}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`
+    });
+}

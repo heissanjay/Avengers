@@ -26,8 +26,7 @@ function getAllCharacters() {
                 if (description === "") {
                     description = `${name} is a member of the Avengers and a prominent superhero in the Marvel universe. They are known for their exceptional skills, powers, and heroic qualities. ${name} plays a crucial role in fighting against villains and defending the innocent. With a strong sense of justice and unwavering determination, ${name} stands as a symbol of hope and bravery.`.substring(0, 100);
                 }
-                if (name != "Thanos") {
-                    document.getElementById("characters-container").innerHTML += `<div class="card d-flex flex-column align-items-center" style="width: 18rem;">
+                document.getElementById("characters-container").innerHTML += `<div class="card d-flex flex-column align-items-center" style="width: 18rem;">
                 <img class="card-img-top" src="${res[index].thumbnail.path}.${res[index].thumbnail.extension}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">${name}</h5>
@@ -35,8 +34,6 @@ function getAllCharacters() {
                   <a href="#" class="btn d-flex justify-content-center" onclick="getAvengerDetails(${res[index].id},event)">Details</a>
                 </div>
             </div>`;
-
-                }
                 index++;
             });
 
